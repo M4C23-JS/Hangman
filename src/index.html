@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>El Colgado</title>
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/flatly/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			h1 {
+				font-family: 'Rock Salt', cursive;
+			}
+			input {
+				font-size: 3em;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body class="d-flex justify-content-center align-items-center">
+		<div id="verificar-letra">
+			<input type="text" maxlength="1" required id="inputUsuario" size="1" />
+		</div>
+		<main
+			class="d-flex justify-content-center align-items-center flex-column mt-3"
+		>
+			<h1 class="text-center mb-3">EL AHORCADO</h1>
+			<h3 id="description" class="text-center mb-3">[Description]</h3>
+			<div class="row d-flex justify-content-around">
+				<div id="personaje">
+					<img
+						id="manImage"
+						src="./assets/images/paso0.svg"
+						height="450px"
+						alt=""
+					/>
+				</div>
+			</div>
+			<div
+				id="letras"
+				class="d-flex aligb-items-center justify-content-around"
+			></div>
+			<div class="background"></div>
+		</main>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	</body>
+</html>
